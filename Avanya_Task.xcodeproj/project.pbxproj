@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB1785E92DFB21C800FFC739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1785E82DFB21C800FFC739 /* AppDelegate.swift */; };
+		EB1785EB2DFB21C800FFC739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1785EA2DFB21C800FFC739 /* SceneDelegate.swift */; };
+		EB1785ED2DFB21C800FFC739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1785EC2DFB21C800FFC739 /* ViewController.swift */; };
+		EB1785F02DFB21C800FFC739 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EB1785EF2DFB21C800FFC739 /* Base */; };
+		EB1785F32DFB21C800FFC739 /* Avanya_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB1785F12DFB21C800FFC739 /* Avanya_Task.xcdatamodeld */; };
+		EB1785F52DFB21C900FFC739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1785F42DFB21C900FFC739 /* Assets.xcassets */; };
+		EB1785F82DFB21C900FFC739 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EB1785F72DFB21C900FFC739 /* Base */; };
+		EB1786032DFB21CA00FFC739 /* Avanya_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1786022DFB21CA00FFC739 /* Avanya_TaskTests.swift */; };
+		EB17860D2DFB21CA00FFC739 /* Avanya_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17860C2DFB21CA00FFC739 /* Avanya_TaskUITests.swift */; };
+		EB17860F2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17860E2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift */; };
+		EBB7DC5D2DFB33E600DE0697 /* Holding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC5C2DFB33E600DE0697 /* Holding.swift */; };
+		EBB7DC5F2DFB340500DE0697 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC5E2DFB340500DE0697 /* Portfolio.swift */; };
+		EBB7DC622DFB343100DE0697 /* PortfolioSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC612DFB343100DE0697 /* PortfolioSummaryView.swift */; };
+		EBB7DC642DFB345100DE0697 /* HoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC632DFB345100DE0697 /* HoldingCell.swift */; };
+		EBB7DC672DFB347F00DE0697 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC662DFB347F00DE0697 /* NetworkService.swift */; };
+		EBB7DC692DFB34A900DE0697 /* PorfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC682DFB34A900DE0697 /* PorfolioViewModel.swift */; };
+		EBB7DC6C2DFB420A00DE0697 /* SummaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC6B2DFB420A00DE0697 /* SummaryRowView.swift */; };
+		EBB7DC6F2DFB424300DE0697 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC6E2DFB424300DE0697 /* DoubleExtension.swift */; };
+		EBB7DC712DFB725300DE0697 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC702DFB725300DE0697 /* MockURLProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1785FF2DFB21CA00FFC739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1785DD2DFB21C800FFC739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1785E42DFB21C800FFC739;
+			remoteInfo = Avanya_Task;
+		};
+		EB1786092DFB21CA00FFC739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1785DD2DFB21C800FFC739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1785E42DFB21C800FFC739;
+			remoteInfo = Avanya_Task;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB1785E52DFB21C800FFC739 /* Avanya_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avanya_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1785E82DFB21C800FFC739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB1785EA2DFB21C800FFC739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB1785EC2DFB21C800FFC739 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB1785EF2DFB21C800FFC739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB1785F22DFB21C800FFC739 /* Avanya_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Avanya_Task.xcdatamodel; sourceTree = "<group>"; };
+		EB1785F42DFB21C900FFC739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1785F72DFB21C900FFC739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB1785F92DFB21C900FFC739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1785FE2DFB21CA00FFC739 /* Avanya_TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Avanya_TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1786022DFB21CA00FFC739 /* Avanya_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avanya_TaskTests.swift; sourceTree = "<group>"; };
+		EB1786082DFB21CA00FFC739 /* Avanya_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Avanya_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB17860C2DFB21CA00FFC739 /* Avanya_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avanya_TaskUITests.swift; sourceTree = "<group>"; };
+		EB17860E2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avanya_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBB7DC5C2DFB33E600DE0697 /* Holding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holding.swift; sourceTree = "<group>"; };
+		EBB7DC5E2DFB340500DE0697 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		EBB7DC612DFB343100DE0697 /* PortfolioSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSummaryView.swift; sourceTree = "<group>"; };
+		EBB7DC632DFB345100DE0697 /* HoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingCell.swift; sourceTree = "<group>"; };
+		EBB7DC662DFB347F00DE0697 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EBB7DC682DFB34A900DE0697 /* PorfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorfolioViewModel.swift; sourceTree = "<group>"; };
+		EBB7DC6B2DFB420A00DE0697 /* SummaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRowView.swift; sourceTree = "<group>"; };
+		EBB7DC6E2DFB424300DE0697 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		EBB7DC702DFB725300DE0697 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1785E22DFB21C800FFC739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1785FB2DFB21CA00FFC739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1786052DFB21CA00FFC739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB1785DC2DFB21C800FFC739 = {
+			isa = PBXGroup;
+			children = (
+				EB1785E72DFB21C800FFC739 /* Avanya_Task */,
+				EB1786012DFB21CA00FFC739 /* Avanya_TaskTests */,
+				EB17860B2DFB21CA00FFC739 /* Avanya_TaskUITests */,
+				EB1785E62DFB21C800FFC739 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1785E62DFB21C800FFC739 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1785E52DFB21C800FFC739 /* Avanya_Task.app */,
+				EB1785FE2DFB21CA00FFC739 /* Avanya_TaskTests.xctest */,
+				EB1786082DFB21CA00FFC739 /* Avanya_TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1785E72DFB21C800FFC739 /* Avanya_Task */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7DC6D2DFB423600DE0697 /* Helper */,
+				EBB7DC6A2DFB34AC00DE0697 /* ViewModel */,
+				EBB7DC652DFB346500DE0697 /* Service */,
+				EBB7DC602DFB341400DE0697 /* Views */,
+				EBB7DC5B2DFB33C600DE0697 /* Models */,
+				EB1785E82DFB21C800FFC739 /* AppDelegate.swift */,
+				EB1785EA2DFB21C800FFC739 /* SceneDelegate.swift */,
+				EB1785EC2DFB21C800FFC739 /* ViewController.swift */,
+				EB1785EE2DFB21C800FFC739 /* Main.storyboard */,
+				EB1785F42DFB21C900FFC739 /* Assets.xcassets */,
+				EB1785F62DFB21C900FFC739 /* LaunchScreen.storyboard */,
+				EB1785F92DFB21C900FFC739 /* Info.plist */,
+				EB1785F12DFB21C800FFC739 /* Avanya_Task.xcdatamodeld */,
+			);
+			path = Avanya_Task;
+			sourceTree = "<group>";
+		};
+		EB1786012DFB21CA00FFC739 /* Avanya_TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1786022DFB21CA00FFC739 /* Avanya_TaskTests.swift */,
+			);
+			path = Avanya_TaskTests;
+			sourceTree = "<group>";
+		};
+		EB17860B2DFB21CA00FFC739 /* Avanya_TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB17860C2DFB21CA00FFC739 /* Avanya_TaskUITests.swift */,
+				EB17860E2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift */,
+			);
+			path = Avanya_TaskUITests;
+			sourceTree = "<group>";
+		};
+		EBB7DC5B2DFB33C600DE0697 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7DC5C2DFB33E600DE0697 /* Holding.swift */,
+				EBB7DC5E2DFB340500DE0697 /* Portfolio.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBB7DC602DFB341400DE0697 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7DC6B2DFB420A00DE0697 /* SummaryRowView.swift */,
+				EBB7DC632DFB345100DE0697 /* HoldingCell.swift */,
+				EBB7DC612DFB343100DE0697 /* PortfolioSummaryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBB7DC652DFB346500DE0697 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7DC702DFB725300DE0697 /* MockURLProtocol.swift */,
+				EBB7DC662DFB347F00DE0697 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EBB7DC6A2DFB34AC00DE0697 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7DC682DFB34A900DE0697 /* PorfolioViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EBB7DC6D2DFB423600DE0697 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7DC6E2DFB424300DE0697 /* DoubleExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1785E42DFB21C800FFC739 /* Avanya_Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1786122DFB21CA00FFC739 /* Build configuration list for PBXNativeTarget "Avanya_Task" */;
+			buildPhases = (
+				EB1785E12DFB21C800FFC739 /* Sources */,
+				EB1785E22DFB21C800FFC739 /* Frameworks */,
+				EB1785E32DFB21C800FFC739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Avanya_Task;
+			productName = Avanya_Task;
+			productReference = EB1785E52DFB21C800FFC739 /* Avanya_Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1785FD2DFB21CA00FFC739 /* Avanya_TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1786152DFB21CA00FFC739 /* Build configuration list for PBXNativeTarget "Avanya_TaskTests" */;
+			buildPhases = (
+				EB1785FA2DFB21CA00FFC739 /* Sources */,
+				EB1785FB2DFB21CA00FFC739 /* Frameworks */,
+				EB1785FC2DFB21CA00FFC739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1786002DFB21CA00FFC739 /* PBXTargetDependency */,
+			);
+			name = Avanya_TaskTests;
+			productName = Avanya_TaskTests;
+			productReference = EB1785FE2DFB21CA00FFC739 /* Avanya_TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1786072DFB21CA00FFC739 /* Avanya_TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1786182DFB21CA00FFC739 /* Build configuration list for PBXNativeTarget "Avanya_TaskUITests" */;
+			buildPhases = (
+				EB1786042DFB21CA00FFC739 /* Sources */,
+				EB1786052DFB21CA00FFC739 /* Frameworks */,
+				EB1786062DFB21CA00FFC739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB17860A2DFB21CA00FFC739 /* PBXTargetDependency */,
+			);
+			name = Avanya_TaskUITests;
+			productName = Avanya_TaskUITests;
+			productReference = EB1786082DFB21CA00FFC739 /* Avanya_TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1785DD2DFB21C800FFC739 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EB1785E42DFB21C800FFC739 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EB1785FD2DFB21CA00FFC739 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EB1785E42DFB21C800FFC739;
+					};
+					EB1786072DFB21CA00FFC739 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EB1785E42DFB21C800FFC739;
+					};
+				};
+			};
+			buildConfigurationList = EB1785E02DFB21C800FFC739 /* Build configuration list for PBXProject "Avanya_Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1785DC2DFB21C800FFC739;
+			productRefGroup = EB1785E62DFB21C800FFC739 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1785E42DFB21C800FFC739 /* Avanya_Task */,
+				EB1785FD2DFB21CA00FFC739 /* Avanya_TaskTests */,
+				EB1786072DFB21CA00FFC739 /* Avanya_TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1785E32DFB21C800FFC739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1785F52DFB21C900FFC739 /* Assets.xcassets in Resources */,
+				EB1785F82DFB21C900FFC739 /* Base in Resources */,
+				EB1785F02DFB21C800FFC739 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1785FC2DFB21CA00FFC739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1786062DFB21CA00FFC739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1785E12DFB21C800FFC739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB7DC5F2DFB340500DE0697 /* Portfolio.swift in Sources */,
+				EBB7DC6F2DFB424300DE0697 /* DoubleExtension.swift in Sources */,
+				EBB7DC642DFB345100DE0697 /* HoldingCell.swift in Sources */,
+				EB1785ED2DFB21C800FFC739 /* ViewController.swift in Sources */,
+				EB1785E92DFB21C800FFC739 /* AppDelegate.swift in Sources */,
+				EBB7DC692DFB34A900DE0697 /* PorfolioViewModel.swift in Sources */,
+				EBB7DC672DFB347F00DE0697 /* NetworkService.swift in Sources */,
+				EBB7DC712DFB725300DE0697 /* MockURLProtocol.swift in Sources */,
+				EBB7DC6C2DFB420A00DE0697 /* SummaryRowView.swift in Sources */,
+				EB1785F32DFB21C800FFC739 /* Avanya_Task.xcdatamodeld in Sources */,
+				EBB7DC622DFB343100DE0697 /* PortfolioSummaryView.swift in Sources */,
+				EBB7DC5D2DFB33E600DE0697 /* Holding.swift in Sources */,
+				EB1785EB2DFB21C800FFC739 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1785FA2DFB21CA00FFC739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1786032DFB21CA00FFC739 /* Avanya_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1786042DFB21CA00FFC739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB17860D2DFB21CA00FFC739 /* Avanya_TaskUITests.swift in Sources */,
+				EB17860F2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1786002DFB21CA00FFC739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1785E42DFB21C800FFC739 /* Avanya_Task */;
+			targetProxy = EB1785FF2DFB21CA00FFC739 /* PBXContainerItemProxy */;
+		};
+		EB17860A2DFB21CA00FFC739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1785E42DFB21C800FFC739 /* Avanya_Task */;
+			targetProxy = EB1786092DFB21CA00FFC739 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB1785EE2DFB21C800FFC739 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1785EF2DFB21C800FFC739 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB1785F62DFB21C900FFC739 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1785F72DFB21C900FFC739 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1786102DFB21CA00FFC739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB1786112DFB21CA00FFC739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB1786132DFB21CA00FFC739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H5X9VF899;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avanya_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "avanya.Avanya-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB1786142DFB21CA00FFC739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H5X9VF899;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avanya_Task/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "avanya.Avanya-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB1786162DFB21CA00FFC739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H5X9VF899;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "avanya.Avanya-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Avanya_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Avanya_Task";
+			};
+			name = Debug;
+		};
+		EB1786172DFB21CA00FFC739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H5X9VF899;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "avanya.Avanya-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Avanya_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Avanya_Task";
+			};
+			name = Release;
+		};
+		EB1786192DFB21CA00FFC739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H5X9VF899;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "avanya.Avanya-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Avanya_Task;
+			};
+			name = Debug;
+		};
+		EB17861A2DFB21CA00FFC739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3H5X9VF899;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "avanya.Avanya-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Avanya_Task;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1785E02DFB21C800FFC739 /* Build configuration list for PBXProject "Avanya_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1786102DFB21CA00FFC739 /* Debug */,
+				EB1786112DFB21CA00FFC739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1786122DFB21CA00FFC739 /* Build configuration list for PBXNativeTarget "Avanya_Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1786132DFB21CA00FFC739 /* Debug */,
+				EB1786142DFB21CA00FFC739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1786152DFB21CA00FFC739 /* Build configuration list for PBXNativeTarget "Avanya_TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1786162DFB21CA00FFC739 /* Debug */,
+				EB1786172DFB21CA00FFC739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1786182DFB21CA00FFC739 /* Build configuration list for PBXNativeTarget "Avanya_TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1786192DFB21CA00FFC739 /* Debug */,
+				EB17861A2DFB21CA00FFC739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB1785F12DFB21C800FFC739 /* Avanya_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB1785F22DFB21C800FFC739 /* Avanya_Task.xcdatamodel */,
+			);
+			currentVersion = EB1785F22DFB21C800FFC739 /* Avanya_Task.xcdatamodel */;
+			path = Avanya_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB1785DD2DFB21C800FFC739 /* Project object */;
+}
