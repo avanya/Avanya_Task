@@ -160,9 +160,7 @@ extension ViewController: PortfolioViewModelDelegate {
     
     func didReceiveError(_ error: String) {
         hideLoader()
-        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
+        showToast(message: error)
     }
 }
 
@@ -181,4 +179,42 @@ extension ViewController: PortfolioSummaryViewDelegate {
             self.view.layoutIfNeeded()
         }
     }
+}
+
+
+// MARK: - Error Handling
+extension ViewController {
+        func showToast(message: String, duration: TimeInterval = 5.0) {
+            let toastLabel = UILabel()
+            toastLabel.text = message
+            toastLabel.numberOfLines = 0
+            toastLabel.textColor = .white
+            toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+            toastLabel.textAlignment = .center
+            toastLabel.font = .systemFont(ofSize: 14)
+            toastLabel.alpha = 0.0
+            toastLabel.layer.cornerRadius = 8
+            toastLabel.clipsToBounds = true
+
+            let padding: CGFloat = 16
+            toastLabel.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(toastLabel)
+
+            NSLayoutConstraint.activate([
+                toastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+                toastLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+                toastLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -38),
+                toastLabel.heightAnchor.constraint(equalToConstant: 40)
+            ])
+
+            UIView.animate(withDuration: 0.3, animations: {
+                toastLabel.alpha = 1.0
+            }) { _ in
+                UIView.animate(withDuration: 0.3, delay: duration, options: .curveEaseOut, animations: {
+                    toastLabel.alpha = 0.0
+                }, completion: { _ in
+                    toastLabel.removeFromSuperview()
+                })
+            }
+        }
 }
