@@ -8,17 +8,27 @@
 import Foundation
 
 /// Enum representing possible errors that can occur during a network request
-enum NetworkError: Error, Equatable {
-    case invalidURL //When the provided URL string cannot be converted to a valid URL
-    case invalidResponse //When the response status code is not in the 2xx range
-    case decodingError //When decoding the JSON fails
-    case networkError(Error) //Generic error for all other network failures
-    
+/// Enum representing possible errors that can occur during a network request
+enum NetworkError: Error, Equatable, LocalizedError {
+    case invalidURL
+    case invalidResponse
+    case decodingError
+    case networkError(Error)
+
+    var errorDescription: String? {
+        switch self {
+        case .invalidURL, .invalidResponse, .decodingError:
+            return "Something went Wrong"
+        case .networkError(let error):
+            return error.localizedDescription
+        }
+    }
+
     static func == (lhs: NetworkError, rhs: NetworkError) -> Bool {
         switch (lhs, rhs) {
         case (.invalidURL, .invalidURL),
-            (.invalidResponse, .invalidResponse),
-            (.decodingError, .decodingError):
+             (.invalidResponse, .invalidResponse),
+             (.decodingError, .decodingError):
             return true
         case (.networkError, .networkError):
             return true
