@@ -41,31 +41,42 @@ class PortfolioViewModel {
     func fetchPortfolio() {
         isLoading = true
         error = nil
-        
-        Task {
-            do {
-                // Perform async API call
-                portfolio = try await networkService.fetchPortfolio(url: url)
-                
-                // Notify delegate on the main thread
+
+        Task { [weak self] in
+            guard let self else { return }
+            // Get from cache first
+            if let cached = CacheManager.shared.load() {
+                self.portfolio = cached
                 await MainActor.run {
-                    delegate?.didUpdatePortfolio()
-                }
-            } catch {
-                // Handle error and notify delegate
-                self.error = error.localizedDescription
-                await MainActor.run {
-                    delegate?.didReceiveError(error.localizedDescription)
+                    self.delegate?.didUpdatePortfolio()
                 }
             }
-            // Set loading to false and inform delegate
-            isLoading = false
+
+            // Getting from network
+            do {
+                let result = try await networkService.fetchPortfolio(url: url)
+                self.portfolio = result
+
+                //Saving new data to Cache
+                CacheManager.shared.save(result)
+
+                await MainActor.run {
+                    self.delegate?.didUpdatePortfolio()
+                }
+            } catch {
+                self.error = error.localizedDescription
+                await MainActor.run {
+                    self.delegate?.didReceiveError(error.localizedDescription)
+                }
+            }
+
+            self.isLoading = false
             await MainActor.run {
-                delegate?.didFinishLoading()
+                self.delegate?.didFinishLoading()
             }
         }
     }
-    
+
     /// Toggles the summary view's collapsed/expanded state
     func toggleSummary() {
         isCollapsed.toggle()

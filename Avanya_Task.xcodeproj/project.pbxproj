@@ -17,6 +17,7 @@
 		EB1786032DFB21CA00FFC739 /* Avanya_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1786022DFB21CA00FFC739 /* Avanya_TaskTests.swift */; };
 		EB17860D2DFB21CA00FFC739 /* Avanya_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17860C2DFB21CA00FFC739 /* Avanya_TaskUITests.swift */; };
 		EB17860F2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17860E2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift */; };
+		EB6E46852DFC1CD300D6CD8F /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6E46842DFC1CD300D6CD8F /* CacheManager.swift */; };
 		EBB7DC5D2DFB33E600DE0697 /* Holding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC5C2DFB33E600DE0697 /* Holding.swift */; };
 		EBB7DC5F2DFB340500DE0697 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC5E2DFB340500DE0697 /* Portfolio.swift */; };
 		EBB7DC622DFB343100DE0697 /* PortfolioSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC612DFB343100DE0697 /* PortfolioSummaryView.swift */; };
@@ -60,6 +61,7 @@
 		EB1786082DFB21CA00FFC739 /* Avanya_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Avanya_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB17860C2DFB21CA00FFC739 /* Avanya_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avanya_TaskUITests.swift; sourceTree = "<group>"; };
 		EB17860E2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avanya_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB6E46842DFC1CD300D6CD8F /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		EBB7DC5C2DFB33E600DE0697 /* Holding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holding.swift; sourceTree = "<group>"; };
 		EBB7DC5E2DFB340500DE0697 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		EBB7DC612DFB343100DE0697 /* PortfolioSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSummaryView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		EB1785E72DFB21C800FFC739 /* Avanya_Task */ = {
 			isa = PBXGroup;
 			children = (
+				EB6E46832DFC1CC200D6CD8F /* Cache */,
 				EBB7DC6D2DFB423600DE0697 /* Helper */,
 				EBB7DC6A2DFB34AC00DE0697 /* ViewModel */,
 				EBB7DC652DFB346500DE0697 /* Service */,
@@ -151,6 +154,14 @@
 				EB17860E2DFB21CA00FFC739 /* Avanya_TaskUITestsLaunchTests.swift */,
 			);
 			path = Avanya_TaskUITests;
+			sourceTree = "<group>";
+		};
+		EB6E46832DFC1CC200D6CD8F /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				EB6E46842DFC1CD300D6CD8F /* CacheManager.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		EBB7DC5B2DFB33C600DE0697 /* Models */ = {
@@ -334,6 +345,7 @@
 				EB1785ED2DFB21C800FFC739 /* ViewController.swift in Sources */,
 				EB1785E92DFB21C800FFC739 /* AppDelegate.swift in Sources */,
 				EBB7DC692DFB34A900DE0697 /* PortfolioViewModel.swift in Sources */,
+				EB6E46852DFC1CD300D6CD8F /* CacheManager.swift in Sources */,
 				EBB7DC672DFB347F00DE0697 /* NetworkService.swift in Sources */,
 				EBB7DC712DFB725300DE0697 /* MockURLProtocol.swift in Sources */,
 				EBB7DC6C2DFB420A00DE0697 /* SummaryRowView.swift in Sources */,

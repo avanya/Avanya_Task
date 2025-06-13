@@ -33,9 +33,6 @@ class ViewController: UIViewController {
     /// Pull-to-refresh control
     private let refreshControl = UIRefreshControl()
     
-    /// To track first launch
-    private var firstLaunch = true
-    
     // MARK: - Initializers
     init(viewModel: PortfolioViewModel = PortfolioViewModel()) {
         self.viewModel = viewModel
@@ -54,14 +51,7 @@ class ViewController: UIViewController {
         title = "Holdings"
         setupBindings()
         self.setupUI()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if firstLaunch {
-            viewModel.fetchPortfolio()
-            firstLaunch = false
-        }
+        viewModel.fetchPortfolio()
     }
     
     // MARK: - UI Setup
@@ -158,6 +148,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK: - PortfolioViewModelDelegate
 extension ViewController: PortfolioViewModelDelegate {
     func didUpdatePortfolio() {
+        didFinishLoading()
         tableView.reloadData()
         summaryView.update(with: viewModel)
     }
