@@ -125,7 +125,11 @@ final class Avanya_TaskTests: XCTestCase {
             {
                 "data": {
                     "userHolding": [
-                        { "symbol": "AAPL", "quantity": 10, "ltp": 150, "avgPrice": 120, "close": 145 }
+                        { "symbol": "AAPL",
+                          "quantity": 10,
+                          "ltp": 150,
+                          "avgPrice": 120,
+                          "close": 145 }
                     ]
                 }
             }
