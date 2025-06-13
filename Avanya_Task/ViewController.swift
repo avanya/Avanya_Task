@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }()
 
     /// Summary view that displays total investment, P&L, etc.
-    private let summaryView = PortfolioSummaryView()
+    private lazy var summaryView = PortfolioSummaryView()
     private var summaryHeightConstraint: NSLayoutConstraint?
 
     /// Spinner for loading state
@@ -32,6 +32,9 @@ class ViewController: UIViewController {
     
     /// Pull-to-refresh control
     private let refreshControl = UIRefreshControl()
+    
+    /// To track first launch
+    private var firstLaunch = true
     
     // MARK: - Initializers
     init(viewModel: PortfolioViewModel = PortfolioViewModel()) {
@@ -51,7 +54,14 @@ class ViewController: UIViewController {
         title = "Holdings"
         setupBindings()
         self.setupUI()
-        viewModel.fetchPortfolio()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if firstLaunch {
+            viewModel.fetchPortfolio()
+            firstLaunch = false
+        }
     }
     
     // MARK: - UI Setup
