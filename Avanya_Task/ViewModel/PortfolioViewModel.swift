@@ -1,5 +1,5 @@
 //
-//  PorfolioViewModel.swift
+//  PortfolioViewModel.swift
 //  Avanya_Task
 //
 //  Created by Avanya Gupta on 12/06/25.

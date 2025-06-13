@@ -22,7 +22,7 @@
 		EBB7DC622DFB343100DE0697 /* PortfolioSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC612DFB343100DE0697 /* PortfolioSummaryView.swift */; };
 		EBB7DC642DFB345100DE0697 /* HoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC632DFB345100DE0697 /* HoldingCell.swift */; };
 		EBB7DC672DFB347F00DE0697 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC662DFB347F00DE0697 /* NetworkService.swift */; };
-		EBB7DC692DFB34A900DE0697 /* PorfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC682DFB34A900DE0697 /* PorfolioViewModel.swift */; };
+		EBB7DC692DFB34A900DE0697 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC682DFB34A900DE0697 /* PortfolioViewModel.swift */; };
 		EBB7DC6C2DFB420A00DE0697 /* SummaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC6B2DFB420A00DE0697 /* SummaryRowView.swift */; };
 		EBB7DC6F2DFB424300DE0697 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC6E2DFB424300DE0697 /* DoubleExtension.swift */; };
 		EBB7DC712DFB725300DE0697 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7DC702DFB725300DE0697 /* MockURLProtocol.swift */; };
@@ -65,7 +65,7 @@
 		EBB7DC612DFB343100DE0697 /* PortfolioSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSummaryView.swift; sourceTree = "<group>"; };
 		EBB7DC632DFB345100DE0697 /* HoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingCell.swift; sourceTree = "<group>"; };
 		EBB7DC662DFB347F00DE0697 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		EBB7DC682DFB34A900DE0697 /* PorfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorfolioViewModel.swift; sourceTree = "<group>"; };
+		EBB7DC682DFB34A900DE0697 /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
 		EBB7DC6B2DFB420A00DE0697 /* SummaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryRowView.swift; sourceTree = "<group>"; };
 		EBB7DC6E2DFB424300DE0697 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		EBB7DC702DFB725300DE0697 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		EBB7DC6A2DFB34AC00DE0697 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EBB7DC682DFB34A900DE0697 /* PorfolioViewModel.swift */,
+				EBB7DC682DFB34A900DE0697 /* PortfolioViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 				EBB7DC642DFB345100DE0697 /* HoldingCell.swift in Sources */,
 				EB1785ED2DFB21C800FFC739 /* ViewController.swift in Sources */,
 				EB1785E92DFB21C800FFC739 /* AppDelegate.swift in Sources */,
-				EBB7DC692DFB34A900DE0697 /* PorfolioViewModel.swift in Sources */,
+				EBB7DC692DFB34A900DE0697 /* PortfolioViewModel.swift in Sources */,
 				EBB7DC672DFB347F00DE0697 /* NetworkService.swift in Sources */,
 				EBB7DC712DFB725300DE0697 /* MockURLProtocol.swift in Sources */,
 				EBB7DC6C2DFB420A00DE0697 /* SummaryRowView.swift in Sources */,
